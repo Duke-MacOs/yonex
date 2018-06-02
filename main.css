@@ -1,0 +1,151 @@
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: green;
+    text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+/* ===============
+	工具样式
+	============= */
+.clearfix:before {
+	content: '';
+	clear: both;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+/*头部样式*/
+header {
+	width: 100%;
+}
+header .main {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	padding-top: 0;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+header .main ul {
+	display: inline-block;
+}
+header .main li {
+	display: inline-block;
+}
+header .main .main-menu li a  {
+	padding: 0 1.5rem;
+}
+header .main .main-menu li a:hover {
+	color: blue;
+}
+header .main .main-menu li a:hover + i {
+	display: unset;
+}
+header .main .main-menu {
+	line-height: 9rem;
+}
+header .main .main-menu li {
+	position: relative;
+}
+header .main .main-menu li i{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: blue;
+	display: none;
+}
+header .right-menu .menu-list ul {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+header .right-menu .menu-list ul li + li {
+	border-left: 1px solid #ccc;
+}
+header .right-menu .menu-list ul li a {
+	display: inline-block;
+	padding: 0 1rem;
+	color: gray;
+}
+header .right-menu .menu-list ul li:nth-child(5) {
+	padding: 0;
+	border: none;
+}
+header .right-menu .menu-list ul li a:hover {
+	color: green;
+}
+header .main .search {
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 30px;
+	padding: 0 5px;
+	border-bottom: 1px solid #ccc;
+}
+header .right-menu .search input:first-child{
+	width: 100%;
+	line-height: 27px;
+	border: none;
+	outline: none;
+}
+header .right-menu .search-icon {
+	position: absolute;
+	right: 5px;
+	top: 2px;
+	width: 24px;
+	height: 24px;
+	border: none;
+	background: url(./images/search.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/*底部广告*/
+.footer-ad img {
+	width: 100%;
+}
